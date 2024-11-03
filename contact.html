@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comrade Ecom - Contact</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>Comrade Ecom</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-list.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Content -->
+    <main>
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:comrade@ecom.com">comrade@ecom.com</a></p>
+        <p>Business Number: 0111632247</p>
+        
+        <form id="contact-form" onsubmit="return sendMessage();">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Comrade Ecom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            // Here you could add code to actually send the message to your server
+            
+            // Show confirmation message
+            alert("Message sent! Thanks for shopping with E-Comrade.");
+            return false; // Prevent actual form submission for this example
+        }
+    </script>
+</body>
+</html>
